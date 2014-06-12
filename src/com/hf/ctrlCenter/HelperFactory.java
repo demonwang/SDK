@@ -3,7 +3,7 @@ package com.hf.ctrlCenter;
 import com.hf.helper.ICouldHelper;
 import com.hf.helper.IGPIOHelper;
 import com.hf.helper.IModuleHelper;
-import com.hf.helper.IModuleManager;
+import com.hf.helper.ISystemManager;
 import com.hf.helper.IPWMHelper;
 import com.hf.helper.ITimerHelper;
 import com.hf.helper.IZigbeeHelper;
@@ -18,13 +18,13 @@ public class HelperFactory {
 	private static IPWMHelper pwmHelper = null;
 	private static IZigbeeHelper zigbeeHelper = null;
 	private static IGPIOHelper gpioHelper = null;
-	private static IModuleManager moduleManager = null;
+	private static ISystemManager moduleManager = null;
 	private static ITimerHelper timerHelper = null;
 	/**
 	 * 
 	 * @return
 	 */
-	public static IModuleManager getModulemanager() {
+	public static ISystemManager getSystemanager() {
 		if (moduleManager == null) {
 			moduleManager = new ModuleManager();
 		}
